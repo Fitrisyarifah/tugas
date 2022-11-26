@@ -3,11 +3,11 @@
 
 Welcome <?php echo $_POST["firstname"]; ?><br>
 Your email address is: <?php echo $_POST["email"]; 
-echo "<br>";
+
 $servername = "ec2-34-201-95-176.compute-1.amazonaws.com";
+$port="5432";
 $username = "aoufqzhwrkqooo";
 $password = "d7ec16bca9c11f7cd9a670ddf7bb0e9cf963fad53829a25378c45ef2602e33ea";
-$port="5432";
 $dbname = "d9hfjdeukk6l2d";
 $firstname=$_POST["firstname"];
 $lastname=$_POST["lastname"];
@@ -25,7 +25,7 @@ try {
   $stmt->bindParam(':email', $email);
   $stmt->execute();
 
-    echo "New records created successfully";
+  echo "New records created successfully";
 } catch(PDOException $e) {
   echo "Error: " . $e->getMessage();
 }
