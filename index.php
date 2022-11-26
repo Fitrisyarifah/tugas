@@ -41,7 +41,7 @@
 	<!----About section start---->
 	<section class="about">
 		<div class="main">
-			<img src="img/Fitri Syarifah NH.jpeg">
+			<img src="Fitri Syarifah NH.jpeg">
 			<div class="about-text">
 				<h2>About Me</h2>
 				<h5>Trisyaa <span> or Fitri</span></h5>
